@@ -3,6 +3,7 @@ import {
   ExclamationCircleIcon,
   PaperAirplaneIcon,
 } from '@heroicons/react/24/solid';
+import { LoadingDots } from '../other';
 
 type ChatFormProps = {
   loading: boolean;
@@ -56,7 +57,7 @@ const ChatForm = ({
           disabled={loading}
           onKeyDown={handleEnter}
           ref={otherRef}
-          className="flex items-center justify-center w-full text-xs sm:text-sm md:text-base rounded-lg border bg-gray-900 border-gray-700 placeholder-gray-400 text-white focus:outline-none resize-none whitespace-pre-wrap overflow-y-auto"
+          className="flex items-center justify-center w-full text-base sm:text-sm md:text-mti-blue rounded-lg border bg-white border-sky-700 placeholder-gray-400 text-mti-blue focus:outline-none resize-none whitespace-pre-wrap overflow-y-auto"
           autoFocus={false}
           rows={1}
           maxLength={2048}
@@ -79,11 +80,14 @@ const ChatForm = ({
         className="inline-flex justify-center p-2 rounded-full cursor-pointer text-blue-500 hover:text-blue-300"
       >
         {loading ? (
-          <></>
+          <LoadingDots
+            color="mti-cyan"
+            className="absolute top-1/2 transform -translate-y-1/2"
+          />
         ) : error ? (
-          <ExclamationCircleIcon className="h-6 w-6 text-red-500" />
+          <ExclamationCircleIcon className="h-8 w-8 text-red-500" />
         ) : (
-          <PaperAirplaneIcon className="h-6 w-6" />
+          <PaperAirplaneIcon className="h-9 w-9 text-mti-blue" />
         )}
       </button>
     </form>

@@ -18,8 +18,8 @@ const ModelTemperature: React.FC<ModelTemperatureProps> = ({
 
   return (
     <div>
-      <label className="block font-medium leading-6 text-xs sm:text-sm text-blue-400">
-        Model Temperature
+      <label className="block font-medium leading-6 text-xs sm:text-sm text-white">
+        Similarity threshold
       </label>
       <div className="mt-2">
         <input

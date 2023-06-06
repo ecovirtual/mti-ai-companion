@@ -17,6 +17,7 @@ import { ConversationMessage, Message } from '@/types';
 import { ChatForm, EmptyState, MessageList } from '@/components/main';
 import SidebarList from '@/components/sidebar/SidebarList';
 import Header from '@/components/header/Header';
+import { scrollToBottom } from '@/utils/windowScroll';
 
 export default function Home() {
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
@@ -260,12 +261,14 @@ export default function Home() {
     }
 
     setLoading(false);
-    messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
+    scrollToBottom();
+    // messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
   }
 
   const handleEnter = (e: any) => {
     if (e.key === 'Enter' && query) {
       handleSubmit(e);
+      scrollToBottom();
     } else if (e.key == 'Enter') {
       e.preventDefault();
     }
@@ -354,8 +357,8 @@ export default function Home() {
         </Transition.Root>
 
         <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col h-screen overflow-y-hidden">
-          <div className="flex grow flex-col bg-gray-900 pb-4 border-r border-gray-800 h-full">
-            <div className="flex h-8 shrink-0 items-center"></div>
+          <div className="flex grow flex-col bg-mti-blue pb-4 border-r border-slate-800 h-full">
+            <div className="flex pt-20 shrink-1 items-center"></div>
             <SidebarList
               createChat={createChat}
               selectedNamespace={selectedNamespace}

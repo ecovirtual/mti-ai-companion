@@ -21,7 +21,7 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #5578a1;
+  background-color: #003b63;
 }
 
 /* Corner */
@@ -36,7 +36,7 @@
 
 /* Additional Styles */
 ::-webkit-scrollbar-thumb {
-  background-color: #2a496f;
+  background-color: #003b63;
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -24,7 +24,7 @@ function MessageList({ messages, loading, messageListRef }: MessageListProps) {
           {messages.map((message, index) => {
             const isApiMessage = message.type === 'apiMessage';
             const messageClasses = ` ${
-              isApiMessage ? 'bg-gray-700/50' : 'bg-gray-800'
+              isApiMessage ? 'bg-white' : 'bg-gray-200'
             }`;
 
             return (
@@ -39,12 +39,12 @@ function MessageList({ messages, loading, messageListRef }: MessageListProps) {
                             : 'bg-purple-400/10 text-purple-400 ring-purple-400/30'
                         }`}
                       >
-                        {isApiMessage ? 'AI' : 'YOU'}
+                        {isApiMessage ? 'Companion' : 'You'}
                       </span>
                       <div className="mx-auto max-w-full">
                         <ReactMarkdown
                           linkTarget="_blank"
-                          className="markdown text-xs sm:text-sm md:text-base leading-relaxed"
+                          className="markdown text-xs sm:text-sm md:text-mti-blue leading-relaxed"
                           remarkPlugins={[remarkGfm]}
                         >
                           {message.message}
