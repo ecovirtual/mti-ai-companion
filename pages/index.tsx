@@ -66,7 +66,7 @@ export default function Home() {
   }>({
     messages: [
       {
-        message: 'Hi, what would you like to know about these documents?',
+        message: `Hi, what would you like to know about ${selectedNamespace}?`,
         type: 'apiMessage',
       },
     ],
