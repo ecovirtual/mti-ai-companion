@@ -74,9 +74,7 @@ export default function Settings() {
   }, [pineconeApiKey, pineconeEnvironment, pineconeIndexName]);
 
   useEffect(() => {
-    if (submitClicked) {
-      fetchNamespaces();
-    }
+    fetchNamespaces();
   }, [fetchNamespaces, submitClicked]);
 
   useEffect(() => {
