@@ -533,12 +533,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinecone-database/pinecone@npm:0.0.14":
-  version: 0.0.14
-  resolution: "@pinecone-database/pinecone@npm:0.0.14"
+"@pinecone-database/pinecone@npm:^0.1.6":
+  version: 0.1.6
+  resolution: "@pinecone-database/pinecone@npm:0.1.6"
   dependencies:
     cross-fetch: ^3.1.5
-  checksum: 3af7a4936bef92e456203307c59eaf5e07447308e47a7fad18060b2a6a04f15ad49f00f378cdbbe709e6e60cb07d1ed71d612f1e6b2b78e56e85b97852448d09
+  checksum: 26f1a40b0353c3dabd9f8824ac0db4d9089fd8ea9e92f01f7c6650e7a21c7e25415bed396010b013d0fe1956c88d57fa1f01f3fb3fc64f06708dce518517ea38
   languageName: node
   linkType: hard
 
@@ -1802,54 +1802,6 @@ __metadata:
   checksum: d7381bca22ed11933a1ccf376db7a94bee2c57aa61e490f680124fa2d1cd27e94eba641d9f45be57caab4f9a6579de0983466f620a2cd6230d7ec93312105ae7
   languageName: node
   linkType: hard
-
-"doc-chatbot@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "doc-chatbot@workspace:."
-  dependencies:
-    "@flydotio/dockerfile": ^0.2.14
-    "@headlessui/react": ^1.7.14
-    "@heroicons/react": ^2.0.17
-    "@microsoft/fetch-event-source": ^2.0.1
-    "@pinecone-database/pinecone": 0.0.14
-    "@radix-ui/react-accordion": ^1.1.1
-    "@tailwindcss/forms": ^0.5.3
-    "@types/formidable": ^2.0.5
-    "@types/lodash": ^4.14.195
-    "@types/multiparty": ^0.0.33
-    "@types/node": ^18.14.6
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.11
-    "@typescript-eslint/parser": ^5.54.0
-    autoprefixer: ^10.4.13
-    clsx: ^1.2.1
-    dotenv: ^16.0.3
-    eslint: 8.35.0
-    eslint-config-next: 13.2.3
-    formidable: ^2.1.1
-    heroicons: ^2.0.17
-    langchain: 0.0.82
-    lodash: ^4.17.21
-    lucide-react: ^0.125.0
-    mammoth: ^1.6.0
-    multiparty: ^4.2.3
-    next: 13.2.3
-    next-auth: ^4.22.1
-    pdf-parse: 1.1.1
-    postcss: ^8.4.21
-    prettier: ^2.8.4
-    react: 18.2.0
-    react-dom: 18.2.0
-    react-dropzone: ^14.2.3
-    react-markdown: ^8.0.5
-    remark-gfm: ^3.0.1
-    tailwind-merge: ^1.10.0
-    tailwindcss: ^3.2.7
-    tsx: ^3.12.3
-    typescript: ^4.9.5
-    uuidv4: ^6.2.13
-  languageName: unknown
-  linkType: soft
 
 "doctrine@npm:^2.1.0":
   version: 2.1.0
@@ -4542,6 +4494,54 @@ __metadata:
   checksum: aa92de608021b242401676e35cfa5aa42dd70cbdc082b916da7fb925c542173e36bce97ea3e804923fe92c0ad991434e4a38327e15a1b5b5f945d66df615ae6d
   languageName: node
   linkType: hard
+
+"mti-ai-companion@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "mti-ai-companion@workspace:."
+  dependencies:
+    "@flydotio/dockerfile": ^0.2.14
+    "@headlessui/react": ^1.7.14
+    "@heroicons/react": ^2.0.17
+    "@microsoft/fetch-event-source": ^2.0.1
+    "@pinecone-database/pinecone": ^0.1.6
+    "@radix-ui/react-accordion": ^1.1.1
+    "@tailwindcss/forms": ^0.5.3
+    "@types/formidable": ^2.0.5
+    "@types/lodash": ^4.14.195
+    "@types/multiparty": ^0.0.33
+    "@types/node": ^18.14.6
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.11
+    "@typescript-eslint/parser": ^5.54.0
+    autoprefixer: ^10.4.13
+    clsx: ^1.2.1
+    dotenv: ^16.0.3
+    eslint: 8.35.0
+    eslint-config-next: 13.2.3
+    formidable: ^2.1.1
+    heroicons: ^2.0.17
+    langchain: 0.0.82
+    lodash: ^4.17.21
+    lucide-react: ^0.125.0
+    mammoth: ^1.6.0
+    multiparty: ^4.2.3
+    next: 13.2.3
+    next-auth: ^4.22.1
+    pdf-parse: 1.1.1
+    postcss: ^8.4.21
+    prettier: ^2.8.4
+    react: 18.2.0
+    react-dom: 18.2.0
+    react-dropzone: ^14.2.3
+    react-markdown: ^8.0.5
+    remark-gfm: ^3.0.1
+    tailwind-merge: ^1.10.0
+    tailwindcss: ^3.2.7
+    tsx: ^3.12.3
+    typescript: ^4.9.5
+    uuidv4: ^6.2.13
+  languageName: unknown
+  linkType: soft
 
 "multiparty@npm:^4.2.3":
   version: 4.2.3
