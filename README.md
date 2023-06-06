@@ -1,4 +1,9 @@
-# doc-chatbot: GPT x Pinecone x LangChain
+# Move to Impact - AI Companion for Sustainability Consultants
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
 ## Features
 
@@ -9,49 +14,33 @@
 - Store and automatically **retrieve chat history** for all chats with local storage
 - Supports `.pdf`, `.docx` and `.txt`
 
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+## Built with
 
-`+ LangChain and Pinecone`
-
-Note: If you'd like to set this up with google auth and mongoDB (as opposed to no auth and using local storage), have a look at this branch: [mongodb-and-auth](https://github.com/dissorial/doc-chatbot/tree/mongodb-and-auth). However, that repo is several important commits behind this one and lacks certain features, so keep that in mind.
-
-**Main chat area**
-![Main chat area](public/images/main.png)
+- OpenAI - GPT-3
+- LangChain
+- Pinecone
 
 ---
 
-**Settings page**
+## Main chat area
 
-![Settings page](public/images/settings.png)
+![Main chat area](public/images/main.png)
 
 ---
 
 ## Local setup & development
 
-If you'd like to run this locally and deploy your own version, follow the steps below.
-
-### Clone the repo
-
-```
-git clone https://github.com/dissorial/doc-chatbot.git
-```
-
----
-
 ### Pinecone setup
 
-#### API key
+**API key**
 
 Create an account on Pinecone. Go to `Indexes` and `Create index`. Enter any name, put `1536` for `Dimensions` and leave the rest on default. Then go to `API keys` and `Create API key`.
 
-#### Index name
+**Index name**
 
 Self-explanatory
 
-#### Pinecone environment
+**Pinecone environment**
 
 Right next to your index name, e.g. `us-west2-rkw`
 
@@ -132,8 +121,11 @@ npm run dev
 
 ---
 
-## Credit
+## Credits
 
-This repository was originally a fork of [GPT-4 & LangChain](https://github.com/mayooear/gpt4-pdf-chatbot-langchain) repository by [mayooear](https://github.com/mayooear/gpt4-pdf-chatbot-langchain) but underwent many major changes in this repo.
+This repository was originally a fork of:
 
-_Frontend of this repo is inspired by ChatGPT._
+- [GPT-4 & LangChain](https://github.com/mayooear/gpt4-pdf-chatbot-langchain) repository by [mayooear](https://github.com/mayooear/gpt4-pdf-chatbot-langchain)
+- [doc-chatbot](https://github.com/dissorial/doc-chatbot) repository by [dissorial](https://github.com/dissorial).
+
+This repo adapt some of the logic and styles to serve sustainability consultants.
