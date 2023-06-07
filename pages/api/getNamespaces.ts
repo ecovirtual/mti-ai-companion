@@ -6,9 +6,12 @@ type NamespaceSummary = {
 };
 
 const getNamespaces = async (req: NextApiRequest, res: NextApiResponse) => {
-  const pineconeApiKey = req.headers['x-api-key'];
-  const targetIndex = req.headers['x-index-name'] as string;
-  const pineconeEnvironment = req.headers['x-environment'];
+  // const pineconeApiKey = req.headers['x-api-key'];
+  // const targetIndex = req.headers['x-index-name'] as string;
+  // const pineconeEnvironment = req.headers['x-environment'];
+  const pineconeApiKey = process.env.PINECONE_API_KEY; //req.headers['x-pinecone-key'];
+  const pineconeEnvironment = process.env.PINECONE_ENVIRONMENT; //req.headers['x-pinecone-environment'];
+  const targetIndex = process.env.PINECONE_INDEX_NAME as string; //req.headers['x-pinecone-index-name'] as string;
 
   const pinecone = await initPinecone(
     pineconeApiKey as string,
