@@ -67,5 +67,6 @@
     "langchain",
     "pdf",
     "openai"
-  ]
+  ],
+  "packageManager": "yarn@3.6.0"
 }
